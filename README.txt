@@ -2,7 +2,7 @@ To improve my ML skills, I'm coding through the entirety of Joel Grus's book "Da
 
 1) Read through the entire chapter. As I do so, I will create my own annotated version of the chapter:
     -These will be contained in files named with the suffix "-vanilla".
-    -For each example, I will first copy it while following along, then delete it, close the book, and attempt to code it from scratch. I will repeat this process until I've written the example a total of 4 times or I can write it easily from memory, whichever takes longest. (Except for mundane things like declaring example data, which I'll Ctrl-C from Grus's code.)
+    -For each example, I will first copy it while following along, then delete it, close the book, and attempt to code it from scratch. I will repeat this process until I've written the example a total of 4 times or I can write it easily from memory, whichever takes longest. (Except for mundane things like declaring example data, which I'll Ctrl-C from Grus's code.) Wherever there's an exception - wherever the book's code is too simple/mundane to bother copying in detail - I'll note it in comments.
     -I will annotate the chapter's code with my own notes. These will be for my own personal advancement/learning and thus probably not useful to anyone else.
     -Other than the annotations, this code will be almost identical to the book's.
 2) At the same time, whenever an example provides an opportunity to invent a more advanced or differently-optimized version of itself, I will create my own variant.

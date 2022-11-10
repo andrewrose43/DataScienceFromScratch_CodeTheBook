@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linalg_basic"
+version = "0.1.0"
+authors = [
+    {name="Andrew Rose", email="andrew.rose43@gmail.com"},
+    {name="Joel Grus"}
+]
+description = "A slight variation upon Joel Grus's linear algebra library from 'Data Science from Scratch' chapter 4, created to build my 'Deluxe' library on top"
+readme="README.md"
+requires-python=">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/andrewrose43/DataScienceFromScratch_CodeTheBook"

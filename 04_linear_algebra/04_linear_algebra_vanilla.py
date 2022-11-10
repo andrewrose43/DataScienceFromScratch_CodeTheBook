@@ -41,7 +41,6 @@ def subtract(v: Vector, w: Vector) -> Vector:
 assert (subtract([1, 2, 3], [4, 5, 6]) == [-3, -3, -3])
 
 
-# Componentwise sum a list of vectors.
 def vector_sum(vectors: list[Vector]) -> Vector:
     """Component-wise sum a list of vectors."""
     # Check for invalid input
@@ -58,17 +57,14 @@ def vector_sum(vectors: list[Vector]) -> Vector:
 assert vector_sum([[1, 2], [3, 4], [5, 6], [7, 8]]) == [16, 20]
 
 
-# Multiply a vector by a scalar.
 def scalar_multiply(vector: Vector, scalar: float) -> Vector:
+    """Multiply a vector by a scalar."""
     assert vector and scalar, "Valid inputs please."
     return [n * scalar for n in vector]
 
 
-assert [2, 4] == scalar_multiply([1, 2], 2)
-
-
-# Use scalar_multiply and vector_sum to compute the component-wise means of a list of (same-sized) vectors.
 def vector_mean(vectors: list[Vector]) -> Vector:
+    """Use scalar_multiply and vector_sum to compute the component-wise means of a list of (same-sized) vectors."""
     assert vectors, "Please provide a valid list of vectors."
     return scalar_multiply(vector_sum(vectors), 1 / len(vectors))
 
@@ -108,8 +104,6 @@ Matrix = list[list[float]]
 
 # Note: The book's error prevention for this method was odd and ineffective. I've implemented a conventional assert
 # statement instead.
-
-
 def shape(m: Matrix):
     assert type(m) == list and type(m[0]) == list, "Please submit a Matrix"
     return len(m), len(m[0])
